@@ -11,6 +11,7 @@ body {
 	background: #333;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 /* Buttons */
@@ -246,8 +247,10 @@ a:focus {
 	padding: 3em 0;
 }
 
+
+
 .trigger-headline {
-	top: 0;
+	top: -0.2em;
 	left: 0;
 	position: absolute;
 	font-size: 5vw;
@@ -354,7 +357,7 @@ a:focus {
 /* ------------------ headline 2 --------------------------- */
 
 .trigger-headline-2 {
-	top: 2.2em;
+	top: 1.7em;
 	left: 0;
 	position: absolute;
 	font-size: 2.37vw;
