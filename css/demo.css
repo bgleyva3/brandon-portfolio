@@ -11,7 +11,7 @@ body {
 	background: #333;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 /* Buttons */
@@ -91,6 +91,103 @@ a:focus {
 
 /* Header */
 
+.header-links{
+	margin: 0.5em auto;
+}
+
+.header-links a{
+	margin: 1em 2em;
+	padding: 0.3rem 0.6rem;
+	cursor: pointer;
+	font-size: calc(0.9em + 0.6vw);
+	font-weight: 100;
+	color: white;
+	border: solid 2px white;
+	border-radius: 2px;
+}
+
+.header-bg-sibling{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.center-div{
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg-sibling{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+  }
+
+.no-display{
+	display: none;
+}
+
+.about-me{
+	position: relative;
+	z-index: 80;
+}
+
+.projects{
+	position: relative;
+	z-index: 80;
+}
+
+.about-me-content{
+	padding: 1em;
+	width: 90vw;
+	height: 80vh;
+	margin-top: 2em;
+	border-radius: 0.3em;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(6px);
+	z-index: 99;
+	position: absolute;
+	left: 5vw;
+	transition: left 0.5s;
+}
+
+.projects-content{
+	padding: 1em;
+	width: 90vw;
+	height: 80vh;
+	margin-top: 2em;
+	border-radius: 0.3em;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(6px);
+	z-index: 99;
+	position: absolute;
+	right: 5vw;
+	transition: right 0.5s;
+}
+
+.hide-about{
+	transition: all 0.5s;
+	position: absolute;
+	left: -100vw;
+}
+
+.hide-projects{
+	transition: all 0.5s;
+	position: absolute;
+	right: -100vw;
+}
+
 .codrops-header {
 	position: absolute;
 	z-index: 100;
@@ -123,6 +220,36 @@ a:focus {
 	padding: 0 1em;
 }
 
+.linkedin{
+	position: absolute;
+	z-index: 999;
+	bottom: 0;
+	margin: 0 0 1em 1.5em;
+	color: white;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.linkedin-font{
+	font-family: 'Roboto', 'Avenir Next', sans-serif;
+}
+
+.author{
+	position: absolute;
+	z-index: 999;
+	bottom: 0;
+	right: 0;
+	margin: 0 3em 1.5em 0;
+	color: white;
+	transform: scale(1.2);
+	font-size: 0.7em;
+}
+
+.author a{
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+}
 
 /* Bottom nav */
 
@@ -253,7 +380,7 @@ a:focus {
 	top: -0.2em;
 	left: 0;
 	position: absolute;
-	font-size: 5vw;
+	font-size: calc(1.2em + 3.7vw);
 	text-transform: uppercase;
 	pointer-events: none;
 	line-height: 1;
@@ -360,7 +487,7 @@ a:focus {
 	top: 1.7em;
 	left: 0;
 	position: absolute;
-	font-size: 2.37vw;
+	font-size: calc(0.83em + 1.48vw);
 	text-transform: uppercase;
 	pointer-events: none;
 	line-height: 1;
