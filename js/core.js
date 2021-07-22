@@ -52,3 +52,12 @@ setTimeout(function(){
     document.getElementById("linkedin").classList.remove("no-display")
     document.getElementById("author").classList.remove("no-display")
 }, 2000);
+
+
+const hereButton = document.getElementById("here-button")
+const studyPlanBackground = document.getElementById("studyPlanBackground")
+const closeButton = document.getElementById("closeButton")
+
+hereButton.addEventListener("click", () => document.getElementById("studyPlanParent").classList.remove("hide-study-plan"));
+studyPlanBackground.addEventListener("click", () => document.getElementById("studyPlanParent").classList.add("hide-study-plan"));
+closeButton.addEventListener("click", () => document.getElementById("studyPlanParent").classList.add("hide-study-plan"));
