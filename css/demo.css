@@ -245,16 +245,16 @@ a:focus {
 }
 
 .section{
-	width: 60%;
+	width: 50%;
 	margin-bottom: 3em;
 	padding: 0 2em;
 }
 
-.section-about{
+/* .section-about{
 	width: 40%;
 	margin-bottom: 3em;
 	padding: 0 2em;
-}
+} */
 
 .vertical-column{
 	display: flex;
@@ -322,6 +322,12 @@ a:focus {
 	border-radius: 2em;
 }
 
+.here-button{
+	color: white; 
+	text-decoration: underline; 
+	cursor: pointer; 
+	font-weight: 700;
+}
 
 /* --------- Projects ----------- */
 
