@@ -218,6 +218,11 @@ a:focus {
 	border: solid white 2px;
 	padding: 1em;
 	border-radius: 2px;
+	float: left
+}
+
+.margin-on-top{
+	margin-top: 5em;
 }
 
 
@@ -1064,10 +1069,19 @@ a:focus {
 		transform: scale(0.6);
 	}
 
+
 }
 
 @media (max-width: 600px) {
 	.study-plan{
 		transform: scale(0.4);
+	}
+
+	.photo{
+		float: none;
+	}
+
+	.margin-on-top{
+		margin-top: 1em;
 	}
 }
