@@ -149,7 +149,7 @@ a:focus {
 }
 
 .lateral-padding{
-	padding: 0 0.5em;
+	padding: 0 1em;
 }
 
 /* ---------- Study Plan ---------- */
@@ -185,6 +185,11 @@ a:focus {
 	position: relative;
 }
 
+.study-plan img{
+	box-shadow: rgba(0, 0, 0, 0.30) 0 0 4rem;
+	border-radius: 4px;
+}
+
 .close-button{
 	background-color: red;
 	font-size: 3em;
@@ -201,6 +206,20 @@ a:focus {
 
 
 /* --------- About me -------- */
+
+.photo{
+	margin: 0 1em;
+	width: 10em;
+	height: 10em;
+	background-image: url(../img/foto\ 2\ wsp\ cut.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid white 2px;
+	padding: 1em;
+	border-radius: 2px;
+}
+
 
 .about-me-content{
 	padding: 1em;
@@ -226,9 +245,15 @@ a:focus {
 }
 
 .section{
-	width: 50%;
+	width: 60%;
 	margin-bottom: 3em;
-	padding: 0 0.5em;
+	padding: 0 2em;
+}
+
+.section-about{
+	width: 40%;
+	margin-bottom: 3em;
+	padding: 0 2em;
 }
 
 .vertical-column{
@@ -300,6 +325,11 @@ a:focus {
 
 /* --------- Projects ----------- */
 
+.date-box{
+	padding: 0 0.3em;
+	border-radius: 0.2em;
+	border: solid white 2px;
+}
 
 .projects-content{
 	padding: 1em;
@@ -1018,9 +1048,16 @@ a:focus {
 		width: 100%
 	}
 
+	.section-about{
+		width: 100%;
+		margin-bottom: 3em;
+		padding: 0 2em;
+	}
+
 	.study-plan{
 		transform: scale(0.6);
 	}
+
 }
 
 @media (max-width: 600px) {
