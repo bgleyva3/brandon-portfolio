@@ -6,6 +6,8 @@ const bgSibling = document.getElementById("bgSibling")
 const headerBgSibling = document.getElementById("headerBgSibling")
 const allProjectContainer = document.getElementById("allProjectContainer")
 
+let timeOut2;
+
 let openAbout = true;
 let openProjects = true;
 
@@ -27,6 +29,7 @@ const moveAbout = (state) => {
 
 const moveProjects = (state) => {
     if(state ==="button" && openProjects){
+        clearTimeout(timeOut2)
         projectsContent.classList.remove("no-a-display")
         bgSibling.classList.remove("no-display")
         headerBgSibling.classList.remove("no-display")
@@ -49,7 +52,7 @@ const handleProjectsHide = (action) =>{
             projectsContent.classList.remove("hide-projects")
         }, 1)
     } else {
-        setTimeout(function(){
+        timeOut2 = setTimeout(function(){
             projectsContent.classList.add("no-a-display")
         }, 500)
     }
