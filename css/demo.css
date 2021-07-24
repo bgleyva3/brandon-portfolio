@@ -355,7 +355,11 @@ a:focus {
 	right: 5vw;
 	transition: right 0.5s;
 	overflow-y: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
+
 
 .projects-container{
 	display: flex;
@@ -1056,7 +1060,8 @@ a:focus {
 
 @media (max-width: 900px) {
 	.section{
-		width: 100%
+		width: 100%;
+		padding: 0;
 	}
 
 	.section-about{
@@ -1069,6 +1074,23 @@ a:focus {
 		transform: scale(0.6);
 	}
 
+	.project-card{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.description-project{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-titles{
+		text-align: center;
+	}
+
 
 }
 
@@ -1079,6 +1101,7 @@ a:focus {
 
 	.photo{
 		float: none;
+		margin: auto;
 	}
 
 	.margin-on-top{
