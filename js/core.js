@@ -4,7 +4,7 @@ const aboutMeContent = document.getElementById("aboutMeContent")
 const projectsContent = document.getElementById("projectsContent")
 const bgSibling = document.getElementById("bgSibling")
 const headerBgSibling = document.getElementById("headerBgSibling")
-
+const allProjectContainer = document.getElementById("allProjectContainer")
 
 let openAbout = true;
 let openProjects = true;
@@ -14,28 +14,47 @@ const moveAbout = (state) => {
         aboutMeContent.classList.remove("hide-about")
         bgSibling.classList.remove("no-display")
         headerBgSibling.classList.remove("no-display")
+        
         openAbout = false;
     } else {
         aboutMeContent.classList.add("hide-about")
         bgSibling.classList.add("no-display")
         headerBgSibling.classList.add("no-display")
+        
         openAbout = true
     }
 }
 
 const moveProjects = (state) => {
     if(state ==="button" && openProjects){
-        projectsContent.classList.remove("hide-projects")
+        projectsContent.classList.remove("no-a-display")
         bgSibling.classList.remove("no-display")
         headerBgSibling.classList.remove("no-display")
+        //allProjectContainer.classList.remove("no-display")
+        handleProjectsHide("show")
         openProjects = false
     } else {
         projectsContent.classList.add("hide-projects")
         bgSibling.classList.add("no-display")
         headerBgSibling.classList.add("no-display")
+        //allProjectContainer.classList.add("no-display")
+        handleProjectsHide()
         openProjects = true
     }
 }
+
+const handleProjectsHide = (action) =>{
+    if(action === "show"){
+        setTimeout(function(){
+            projectsContent.classList.remove("hide-projects")
+        }, 1)
+    } else {
+        setTimeout(function(){
+            projectsContent.classList.add("no-a-display")
+        }, 500)
+    }
+}
+
 
 aboutMeBtn.addEventListener("click", () => {moveProjects("close"); moveAbout("button")});
 

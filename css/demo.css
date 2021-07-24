@@ -354,10 +354,10 @@ a:focus {
 	position: absolute;
 	right: 5vw;
 	transition: right 0.5s;
-	overflow-y: auto;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	overflow-y: auto;
 }
 
 
@@ -526,6 +526,12 @@ a:focus {
 	transition: all 0.5s;
 	position: absolute;
 	right: -100vw;
+}
+
+.no-a-display{
+	transition: all 0.5s;
+	position: relative;
+	display: none;
 }
 
 .codrops-header {
