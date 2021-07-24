@@ -1082,6 +1082,10 @@ a:focus {
 		display: none;
 	}
 
+	.section-titles{
+		text-align: center;
+	}
+
 }
 
 @media (max-width: 600px) {
