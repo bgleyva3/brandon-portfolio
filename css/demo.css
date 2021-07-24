@@ -383,6 +383,10 @@ a:focus {
 	visibility: hidden;
 }
 
+.show-on-pc{
+	display: flex;
+}
+
 /* .projects-content::after{
 	content: '';
 	width: 15em 
@@ -1069,6 +1073,9 @@ a:focus {
 		transform: scale(0.6);
 	}
 
+	.show-on-pc{
+		display: none;
+	}
 
 }
 
@@ -1083,5 +1090,9 @@ a:focus {
 
 	.margin-on-top{
 		margin-top: 1em;
+	}
+
+	.show-on-pc{
+		display: none;
 	}
 }
