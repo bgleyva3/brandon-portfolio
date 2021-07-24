@@ -1105,4 +1105,19 @@ a:focus {
 	.show-on-pc{
 		display: none;
 	}
+
+	.project-card{
+		/* display: flex;
+		margin: 0.5em 1.5em; */
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.description-project{
+		/* max-width: 15em;
+		padding: 0.5em; */
+		text-align: center;
+	}
+	
 }
