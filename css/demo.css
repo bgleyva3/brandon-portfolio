@@ -32,6 +32,7 @@ body {
 	margin: 0 auto;
 	background: rgba(251, 224, 148, 0.8);
 	-webkit-transition: background 0.3s, opacity 0.3s;
+	-o-transition: background 0.3s, opacity 0.3s;
 	transition: background 0.3s, opacity 0.3s;
 }
 
@@ -120,9 +121,15 @@ a:focus {
 	top: 0;
 	left: 0;
 	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .bg-sibling{
@@ -158,9 +165,15 @@ a:focus {
 
 .study-plan-parent{
    position: absolute;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    width: 100vw;
 }
 
@@ -180,13 +193,16 @@ a:focus {
 }
 
 .study-plan{
-	transform: scale(0.7);
+	-webkit-transform: scale(0.7);
+	    -ms-transform: scale(0.7);
+	        transform: scale(0.7);
 	z-index: 900;
 	position: relative;
 }
 
 .study-plan img{
-	box-shadow: rgba(0, 0, 0, 0.30) 0 0 4rem;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.30) 0 0 4rem;
+	        box-shadow: rgba(0, 0, 0, 0.30) 0 0 4rem;
 	border-radius: 4px;
 }
 
@@ -233,14 +249,22 @@ a:focus {
 	margin-top: 2em;
 	border-radius: 0.3em;
 	background-color: rgba(255, 255, 255, 0.3);
-	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	        backdrop-filter: blur(6px);
 	z-index: 99;
 	position: absolute;
 	left: 5vw;
+	-webkit-transition: left 0.5s;
+	-o-transition: left 0.5s;
 	transition: left 0.5s;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	overflow-y: auto;
 }
 
@@ -262,23 +286,38 @@ a:focus {
 } */
 
 .vertical-column{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .experience-content{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .experience-column{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	overflow-x: hidden;
 }
 
 .each-experience{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0 0.5em;
 }
 
@@ -287,8 +326,13 @@ a:focus {
 }
 
 .experience-description{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .experience-description p{
@@ -296,8 +340,12 @@ a:focus {
 }
 
 .date-and-line{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	position: relative
 }
 
@@ -309,7 +357,9 @@ a:focus {
 	width: 15em;
 	top: 0.7em;
 	border-top: white solid 2px;
-	transform: translateY(50%);
+	-webkit-transform: translateY(50%);
+	    -ms-transform: translateY(50%);
+	        transform: translateY(50%);
 }
 
 .to-right{
@@ -349,24 +399,39 @@ a:focus {
 	margin-top: 2em;
 	border-radius: 0.3em;
 	background-color: rgba(255, 255, 255, 0.3);
-	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	        backdrop-filter: blur(6px);
 	z-index: 99;
 	position: absolute;
 	right: 5vw;
+	-webkit-transition: right 0.5s;
+	-o-transition: right 0.5s;
 	transition: right 0.5s;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	overflow-y: auto;
 }
 
 
 .projects-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	flex-basis: auto;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-preferred-size: auto;
+	    flex-basis: auto;
 	margin: auto;
 	position: relative;
 }
@@ -388,6 +453,8 @@ a:focus {
 }
 
 .show-on-pc{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -436,18 +503,26 @@ a:focus {
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 4px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 }
 
 
 .gif-and-buttons{
 	position: relative;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
 	transition: 0.1s;
 }
 
 .gif-and-buttons:hover{
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
 	transition: 0.1s;
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 	z-index: 10
 }
 
@@ -459,9 +534,15 @@ a:focus {
 	position: absolute;
 	bottom: 10%;
 	left: 50%;
-	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	color: black;
 	z-index: 10;
 }
@@ -481,7 +562,9 @@ a:focus {
 .gif-buttons i{
 	margin: 0 1em;
 	cursor: pointer;
-	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	    -ms-transform: scale(1.4);
+	        transform: scale(1.4);
 }
 
 /* .gif-style:hover{
@@ -490,6 +573,8 @@ a:focus {
 } */
 
 .project-card{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0.5em 1.5em;
 }
@@ -517,18 +602,24 @@ a:focus {
 
 
 .hide-about{
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	position: absolute;
 	left: -100vw;
 }
 
 .hide-projects{
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	position: absolute;
 	right: -100vw;
 }
 
 .no-a-display{
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	position: relative;
 	display: none;
@@ -539,17 +630,18 @@ a:focus {
 	z-index: 100;
 	top: 0;
 	left: 0;
-	display: -webkit-flex;
 	display: -ms-flexbox;
+	display: -webkit-box;
 	display: flex;
-	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-ms-flex-align: center;
-	align-items: center;
+	-webkit-box-align: center;
+	        align-items: center;
 	width: 100%;
 	padding: 0.8em 0.75em;
 	text-align: left;
@@ -572,7 +664,9 @@ a:focus {
 	bottom: 0;
 	margin: 0 0 1em 1.5em;
 	color: white;
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 	cursor: pointer;
 }
 
@@ -587,7 +681,9 @@ a:focus {
 	right: 0;
 	margin: 0 3em 1.5em 0;
 	color: white;
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 	font-size: 0.7em;
 }
 
@@ -652,12 +748,12 @@ a:focus {
 
 .codrops-links {
 	position: relative;
-	display: -webkit-flex;
 	display: -ms-flexbox;
+	display: -webkit-box;
 	display: flex;
-	-webkit-justify-content: center;
 	-ms-flex-pack: center;
-	justify-content: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
 	text-align: center;
 	white-space: nowrap;
 }
@@ -691,30 +787,54 @@ a:focus {
 }
 
 .github-corner:hover .octo-arm {
-	animation: octocat-wave 560ms ease-in-out;
+	-webkit-animation: octocat-wave 560ms ease-in-out;
+	        animation: octocat-wave 560ms ease-in-out;
+}
+
+@-webkit-keyframes octocat-wave {
+	0%,
+	100% {
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
+	}
+	20%,
+	60% {
+		-webkit-transform: rotate(-25deg);
+		        transform: rotate(-25deg);
+	}
+	40%,
+	80% {
+		-webkit-transform: rotate(10deg);
+		        transform: rotate(10deg);
+	}
 }
 
 @keyframes octocat-wave {
 	0%,
 	100% {
-		transform: rotate(0);
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
 	}
 	20%,
 	60% {
-		transform: rotate(-25deg);
+		-webkit-transform: rotate(-25deg);
+		        transform: rotate(-25deg);
 	}
 	40%,
 	80% {
-		transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		        transform: rotate(10deg);
 	}
 }
 
 @media (max-width:500px) {
 	.github-corner:hover .octo-arm {
-		animation: none;
+		-webkit-animation: none;
+		        animation: none;
 	}
 	.github-corner .octo-arm {
-		animation: octocat-wave 560ms ease-in-out;
+		-webkit-animation: octocat-wave 560ms ease-in-out;
+		        animation: octocat-wave 560ms ease-in-out;
 	}
 }
 
@@ -737,13 +857,15 @@ a:focus {
 	line-height: 1;
 	width: 100%;
 	height: 100%;
-	display: -webkit-flex;
 	display: -ms-flexbox;
+	display: -webkit-box;
 	display: flex;
-	-webkit-align-items: center;
 	-ms-flex-align: center;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin: 0;
 }
 
@@ -752,11 +874,16 @@ a:focus {
 	position: relative;
 	padding: 0 1vw;
 	-webkit-transition: opacity 2s, -webkit-transform 2s;
+	transition: opacity 2s, -webkit-transform 2s;
+	-o-transition: opacity 2s, transform 2s;
 	transition: opacity 2s, transform 2s;
+	transition: opacity 2s, transform 2s, -webkit-transform 2s;
 	-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	-o-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	   transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 	-webkit-transition-delay: 0.7s;
-	transition-delay: 0.7s;
+	-o-transition-delay: 0.7s;
+	   transition-delay: 0.7s;
 }
 
 .trigger-headline--hidden span {
@@ -844,13 +971,15 @@ a:focus {
 	line-height: 1;
 	width: 100%;
 	height: 100%;
-	display: -webkit-flex;
 	display: -ms-flexbox;
+	display: -webkit-box;
 	display: flex;
-	-webkit-align-items: center;
 	-ms-flex-align: center;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin: 0;
 	color:#fbe094;
 }
@@ -860,11 +989,16 @@ a:focus {
 	position: relative;
 	padding: 0 1vw;
 	-webkit-transition: opacity 2s, -webkit-transform 2s;
+	transition: opacity 2s, -webkit-transform 2s;
+	-o-transition: opacity 2s, transform 2s;
 	transition: opacity 2s, transform 2s;
+	transition: opacity 2s, transform 2s, -webkit-transform 2s;
 	-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	-o-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	   transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 	-webkit-transition-delay: 0.7s;
-	transition-delay: 0.7s;
+	-o-transition-delay: 0.7s;
+	   transition-delay: 0.7s;
 }
 
 .trigger-headline-2--hidden span {
@@ -977,11 +1111,16 @@ a:focus {
 /* Adjustments for some demos */
 .demo-4 .trigger-headline span {
 	-webkit-transition: opacity 2.3s, -webkit-transform 2.3s;
+	transition: opacity 2.3s, -webkit-transform 2.3s;
+	-o-transition: opacity 2.3s, transform 2.3s;
 	transition: opacity 2.3s, transform 2.3s;
+	transition: opacity 2.3s, transform 2.3s, -webkit-transform 2.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	-o-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	   transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
+	-o-transition-delay: 0.1s;
+	   transition-delay: 0.1s;
 }
 
 .js .demo-4 .trigger-headline--hidden span:nth-child(1) {
@@ -1016,7 +1155,8 @@ a:focus {
 
 .demo-5 .trigger-headline span {
 	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
+	-o-transition-delay: 0s;
+	   transition-delay: 0s;
 }
 
 
@@ -1040,6 +1180,7 @@ a:focus {
 	padding: 1em;
 	vertical-align: top;
 	-webkit-transition: color 0.3s;
+	-o-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
@@ -1047,6 +1188,7 @@ a:focus {
 	max-width: 100%;
 	opacity: 0.6;
 	-webkit-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
 
@@ -1081,7 +1223,9 @@ a:focus {
 	}
 
 	.study-plan{
-		transform: scale(0.6);
+		-webkit-transform: scale(0.6);
+		    -ms-transform: scale(0.6);
+		        transform: scale(0.6);
 	}
 
 	.show-on-pc{
@@ -1096,7 +1240,9 @@ a:focus {
 
 @media (max-width: 600px) {
 	.study-plan{
-		transform: scale(0.4);
+		-webkit-transform: scale(0.4);
+		    -ms-transform: scale(0.4);
+		        transform: scale(0.4);
 	}
 
 	.photo{
@@ -1115,9 +1261,16 @@ a:focus {
 	.project-card{
 		/* display: flex;
 		margin: 0.5em 1.5em; */
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.description-project{

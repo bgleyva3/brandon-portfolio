@@ -3,7 +3,8 @@
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	filter: contrast(80%);
+	-webkit-filter: contrast(80%);
+	        filter: contrast(80%);
 	
 }
 
@@ -29,7 +30,10 @@
 
 .segmenter__piece-parallax {
 	-webkit-transition: -webkit-transform 0.2s ease-out;
+	transition: -webkit-transform 0.2s ease-out;
+	-o-transition: transform 0.2s ease-out;
 	transition: transform 0.2s ease-out;
+	transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
 .segmenter__pieces {
@@ -47,21 +51,25 @@
 .segmenter__shadow {
 	position: absolute;
 	opacity: 0;
-	box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
+	        box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
 }
 
 /* Individual shadow styles */
 .demo-1 .segmenter__shadow {
-	box-shadow: 0px 20px 50px rgba(18, 20, 28, 0.61);
+	-webkit-box-shadow: 0px 20px 50px rgba(18, 20, 28, 0.61);
+	        box-shadow: 0px 20px 50px rgba(18, 20, 28, 0.61);
 }
 
 .demo-2 .segmenter__shadow {
-	box-shadow: 10px 10px 30px rgba(43, 27, 19, 0.95);
+	-webkit-box-shadow: 10px 10px 30px rgba(43, 27, 19, 0.95);
+	        box-shadow: 10px 10px 30px rgba(43, 27, 19, 0.95);
 }
 
 .demo-3 .segmenter__shadow {
 	border: 7px solid rgba(255,255,255,0.7);
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .demo-3 .segmenter__shadow::before {
@@ -71,17 +79,21 @@
 	left: -20px;
 	width: 100%;
 	height: 100%;
-	box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.7);
+	        box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.7);
 }
 
 .demo-4 .segmenter__shadow {
-	box-shadow: 8px 8px 30px rgba(15, 32, 38, 0.35);
+	-webkit-box-shadow: 8px 8px 30px rgba(15, 32, 38, 0.35);
+	        box-shadow: 8px 8px 30px rgba(15, 32, 38, 0.35);
 }
 
 .demo-5 .segmenter__shadow {
-	box-shadow: 0px 18px 29px rgba(4, 19, 22, 0.65);
+	-webkit-box-shadow: 0px 18px 29px rgba(4, 19, 22, 0.65);
+	        box-shadow: 0px 18px 29px rgba(4, 19, 22, 0.65);
 }
 
 .demo-6 .segmenter__shadow {
-	box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75);
+	-webkit-box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75);
+	        box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75);
 }
