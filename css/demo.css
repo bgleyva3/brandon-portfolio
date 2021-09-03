@@ -14,6 +14,12 @@ body {
 	overflow: hidden;
 }
 
+/* .borderline-text{
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-shadow: 0 1px 1px black;
+} */
+
 /* Buttons */
 
 .btn {
@@ -82,13 +88,77 @@ a:focus {
 
 /* Icons */
 
+/* .flex-icons{
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.3);
+} */
+
 .icon {
-	display: block;
-	width: 1.5em;
-	height: 1.5em;
-	margin: 0 auto;
+	display: inline-block;
+	vertical-align: middle;
+	width: 2.5em;
+	height: 2.5em;
 	fill: currentColor;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* -webkit-filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.3))
+                  drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.3));
+  	filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.3)) 
+          drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.3)); */
 }
+
+.icon-larger {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3.5em;
+	height: 3.5em;
+	fill: currentColor;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.js-icon{
+	background-image: url("../img/js.png");
+}
+
+.react-icon{
+	background-image: url("../img/react.png");
+}
+
+.redux-icon{
+	background-image: url("../img/redux.png");
+}
+
+.html-icon{
+	background-image: url("../img/html.png");
+}
+
+.css-icon{
+	background-image: url("../img/css.png");
+}
+
+.sass-icon{
+	background-image: url("../img/sass.png");
+}
+
+.bootstrap-icon{
+	background-image: url("../img/bootstrap.png");
+}
+
+.node-icon{
+	background-image: url("../img/node.png");
+}
+
+.postgress-icon{
+	background-image: url("../img/postgress.png");
+}
+
+.git-icon{
+	background-image: url("../img/git.png");
+}
+
 
 /* Header */
 
@@ -105,8 +175,8 @@ a:focus {
 	color: white;
 	border: solid 3px white;
 	border-radius: 4px;
-	box-shadow: 1px 1px 1px #505050;
-	text-shadow: 1px 1px 1px #505050;
+	box-shadow: 0 1px 1px #505050;
+	text-shadow: 0 1px 1px #505050;
 }
 
 .header-bg-sibling{
@@ -226,17 +296,18 @@ a:focus {
 /* --------- About me -------- */
 
 .photo{
-	margin: 0 1em;
+	margin: auto;
 	width: 10em;
 	height: 10em;
 	background-image: url(../img/foto\ 2\ wsp\ cut.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	border: solid white 2px;
+	/* border: solid white 2px; */
 	padding: 1em;
-	border-radius: 2px;
-	float: left
+	border-radius: 4px;
+	
+	/* float: left */
 }
 
 .margin-on-top{
@@ -250,7 +321,7 @@ a:focus {
 	height: 80vh;
 	margin-top: 2em;
 	border-radius: 0.3em;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(114, 96, 96, 0.2);
 	-webkit-backdrop-filter: blur(6px);
 	        backdrop-filter: blur(6px);
 	z-index: 99;
@@ -400,7 +471,7 @@ a:focus {
 	height: 80vh;
 	margin-top: 2em;
 	border-radius: 0.3em;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(114, 96, 96, 0.2);
 	-webkit-backdrop-filter: blur(6px);
 	        backdrop-filter: blur(6px);
 	z-index: 99;
