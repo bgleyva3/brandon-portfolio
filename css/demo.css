@@ -101,10 +101,12 @@ a:focus {
 	padding: 0.3rem 0.6rem;
 	cursor: pointer;
 	font-size: calc(0.9em + 0.6vw);
-	font-weight: 100;
+	font-weight: 600;
 	color: white;
-	border: solid 2px white;
-	border-radius: 2px;
+	border: solid 3px white;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px #505050;
+	text-shadow: 1px 1px 1px #505050;
 }
 
 .header-bg-sibling{
@@ -852,6 +854,7 @@ a:focus {
 	left: 0;
 	position: absolute;
 	font-size: calc(1.2em + 3.7vw);
+	font-weight: 500;
 	text-transform: uppercase;
 	pointer-events: none;
 	line-height: 1;
@@ -873,6 +876,7 @@ a:focus {
 	display: inline-block;
 	position: relative;
 	padding: 0 1vw;
+	text-shadow: 1px 1px 2px #505050;
 	-webkit-transition: opacity 2s, -webkit-transform 2s;
 	transition: opacity 2s, -webkit-transform 2s;
 	-o-transition: opacity 2s, transform 2s;
@@ -966,6 +970,7 @@ a:focus {
 	left: 0;
 	position: absolute;
 	font-size: calc(0.83em + 1.48vw);
+	font-weight: 600;
 	text-transform: uppercase;
 	pointer-events: none;
 	line-height: 1;
@@ -981,13 +986,16 @@ a:focus {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	margin: 0;
-	color:#fbe094;
+	color:#ffe49b;
+	
+	/* -webkit-text-stroke: 1px #b8a470; */
 }
 
 .trigger-headline-2 span {
 	display: inline-block;
 	position: relative;
 	padding: 0 1vw;
+	text-shadow: 1px 1px 2px #8a7b54;
 	-webkit-transition: opacity 2s, -webkit-transform 2s;
 	transition: opacity 2s, -webkit-transform 2s;
 	-o-transition: opacity 2s, transform 2s;
