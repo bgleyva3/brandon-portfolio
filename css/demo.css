@@ -297,8 +297,8 @@ a:focus {
 
 .photo{
 	margin: auto;
-	width: 10em;
-	height: 10em;
+	width: 12em;
+	height: 12em;
 	background-image: url(../img/foto\ 2\ wsp\ cut.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -321,7 +321,7 @@ a:focus {
 	height: 80vh;
 	margin-top: 2em;
 	border-radius: 0.3em;
-	background-color: rgba(114, 96, 96, 0.2);
+	background-color: rgba(114, 96, 96, 0.3);
 	-webkit-backdrop-filter: blur(6px);
 	        backdrop-filter: blur(6px);
 	z-index: 99;
@@ -333,6 +333,8 @@ a:focus {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -443,6 +445,18 @@ a:focus {
 	right: 2em;
 }
 
+.vertical-line-parent{
+	position: relative;
+}
+
+.top-vertical-line{
+	position: absolute;
+	left: -3px;
+	width: 0.5rem;
+	height: 2px;
+	background-color: white;
+}
+
 .vertical-line{
 	width: 2px;
 	height: 24em;
@@ -455,6 +469,14 @@ a:focus {
 	text-decoration: underline; 
 	cursor: pointer; 
 	font-weight: 700;
+}
+
+.vertical-separation{
+	position: absolute;
+	width: 1px;
+	height: 96%;
+	box-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+	background-color: rgba(73, 73, 73, 0.5);
 }
 
 /* --------- Projects ----------- */
@@ -471,7 +493,7 @@ a:focus {
 	height: 80vh;
 	margin-top: 2em;
 	border-radius: 0.3em;
-	background-color: rgba(114, 96, 96, 0.2);
+	background-color: rgba(114, 96, 96, 0.3);
 	-webkit-backdrop-filter: blur(6px);
 	        backdrop-filter: blur(6px);
 	z-index: 99;
@@ -492,10 +514,19 @@ a:focus {
 }
 
 
+.center-projects-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .projects-container{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
 	-webkit-box-align: center;
@@ -649,7 +680,7 @@ a:focus {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin: 0.5em 1.5em;
+	margin: 1.5em 1.5em;
 }
 
 .description-project{
@@ -1290,6 +1321,11 @@ a:focus {
 }
 
 @media (max-width: 900px) {
+
+	.vertical-separation{
+		display: none
+	}
+
 	.section{
 		width: 100%;
 		padding: 0;
@@ -1318,10 +1354,15 @@ a:focus {
 }
 
 @media (max-width: 600px) {
+
 	.study-plan{
 		-webkit-transform: scale(0.4);
 		    -ms-transform: scale(0.4);
 		        transform: scale(0.4);
+	}
+
+	.vertical-separation{
+		display: none
 	}
 
 	.photo{
